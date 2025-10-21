@@ -11,7 +11,7 @@ const Layout = () => {
   const dragBoundsRef = useRef(null);
   const { pathname } = useLocation();
   
-  const shouldShow = pathname === "/connected";
+  const shouldShow = pathname.endsWith("/connected");
 
   return (
     <div className="relative min-h-screen flex flex-col overflow-hidden">
