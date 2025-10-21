@@ -13,7 +13,7 @@ const Stats = () => {
 
 
   useEffect(() => {
-    fetch(`https://gridify-api.onrender.com/${range}`)
+    fetch(`https://gridify-api.onrender.com/tracks/${range}`)
       .then(res => res.json())
       .then(data => {  
         setTrackList(data)
