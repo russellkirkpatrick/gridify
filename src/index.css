@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    /* OPTION 1 — Roboto Mono */
+    font-family: "Roboto Mono", monospace;
+
+    /* font-family: "Lexend Zetta", sans-serif; */
+    
+
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+}
+
+@layer utilities {
+  .shimmer-sky {
+    background: linear-gradient(90deg, #ffffff, #38bdf8, #ffffff);
+    background-size: 200%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shimmer-sky 2s linear infinite;
+  }
+
+
+  @keyframes shimmer {
+    to {
+      background-position: -200%;
+    }
+  }
+
+  @keyframes shimmer-sky {
+    to {
+      background-position: -200%;
+    }
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.tooltip:hover,
+.relative:hover .tooltip {
+  opacity: 1 !important;
+}
