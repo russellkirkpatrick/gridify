@@ -22,6 +22,7 @@ jobs:
         with:
           persist-credentials: false   # important for git 128 issues
           fetch-depth: 0
+          lfs: true
       - name: Setup Node
         uses: actions/setup-node@v4
         with:

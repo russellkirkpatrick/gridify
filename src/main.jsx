@@ -9,7 +9,10 @@ import { Store } from "./Store.jsx";
 createRoot(document.getElementById("root")).render(
   <Store>
     <BrowserRouter basename="/gridify">
-      <Layout />
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route path="/connected" element={<Connected />} />
+      </Routes>
     </BrowserRouter>
   </Store>
 );
