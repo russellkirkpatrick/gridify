@@ -16,7 +16,7 @@ const Login = () => {
   return (
     <div className="p-8 rounded-md text-center">
       <button id="login" onClick={login}>
-        <img className="h-[30px] w-[30px]" src="/img/spotifyLogo.png"></img>
+        <img className="h-[30px] w-[30px]" src={`${import.meta.env.BASE_URL}/img/spotifyLogo.png`}></img>
       </button>
     </div>
   );

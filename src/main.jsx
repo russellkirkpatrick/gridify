@@ -8,7 +8,7 @@ import { Store } from "./Store.jsx";
 
 createRoot(document.getElementById("root")).render(
   <Store>
-    <BrowserRouter>
+    <BrowserRouter basename="/gridify">
       <Layout />
     </BrowserRouter>
   </Store>
