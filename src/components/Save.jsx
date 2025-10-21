@@ -49,7 +49,7 @@ const Save = () => {
 
     try {
       setLoading(true);
-      const res = await fetch("http://localhost:4000/playlist", {
+      const res = await fetch("https://gridify-api.onrender.com/playlist", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
